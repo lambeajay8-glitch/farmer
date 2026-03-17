@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Apply for Vima</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background-color: #e8f5e9;
+    margin: 0;
+    padding: 0;
+}
+
+h2{
+    text-align: center;
+    color: #2e7d32;
+    margin-top: 30px;
+}
+
+form{
+    width: 350px;
+    background: white;
+    padding: 25px;
+    margin: 30px auto;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+input, select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #2e7d32;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h2> Apply for Farmer Vima</h2>
+
+<form action="vima.php" method="post">
+
+    Farmer Name:<br>
+    <input type="text" name="farmer_name" required><br><br>
+
+    Mobile Number:<br>
+    <input type="tel" name="mobile" required><br><br>
+
+    Village:<br>
+    <input type="text" name="village" required><br><br>
+
+    Vima Type:<br>
+    <select name="vima_type">
+        <option>Fasal Bima</option>
+        <option>Apghat Vima</option>
+        <option>Pik Vima</option>
+    </select><br><br>
+
+    Crop Name:<br>
+    <input type="text" name="crop_name"><br><br>
+
+    Crop Area (Acre):<br>
+    <input type="text" name="area"><br><br>
+
+    <button type="submit">Apply Vima</button>
+
+</form>
+
+</body>
+</html>
+
